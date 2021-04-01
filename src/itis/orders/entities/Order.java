@@ -13,4 +13,11 @@ public class Order {
 	private ArrayList<Item> items;
 
 	private Status status;
+
+	public Order(Long id, Integer discountPercent, ArrayList<Item> items, Status status) {
+		this.id = id;
+		this.discountPercent = discountPercent;
+		this.items = items;
+		this.status = status;
+	}
 }
